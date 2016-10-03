@@ -6,7 +6,7 @@ using System.Text;
 namespace Sandbox
 {
     // This class represents a simple box of fruit - it can only contain
-    // Bananas and Apples. It also represents the price of each item. 
+    // Bananas and Apples. It also represents the price of each item.
     class FruitBox
     {
         private int numberOfBananas;
@@ -40,6 +40,25 @@ namespace Sandbox
         {
             string description = "The box contains " + numberOfBananas + " bananas and " + numberOfApples + " apples";
             return description;
+        }
+
+        // Added for part 3)
+        public double GetTotalPrice()
+        {
+            double totalPrice = priceForOneBanana * numberOfBananas + priceForOneApple * numberOfApples;
+            return totalPrice;
+        }
+
+        // Added for part 4)
+        public void SetPriceForOneBanana(double priceForOneBanana)
+        {
+            this.priceForOneBanana = priceForOneBanana;
+        }
+
+        // Added for part 4)
+        public void SetPriceForOneApple(double priceForOneApple)
+        {
+            this.priceForOneApple = priceForOneApple;
         }
     }
 }
