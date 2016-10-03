@@ -2,6 +2,7 @@
 <H1>Exercise 9b</H1>
 
 Download or clone the C# project SuperMarket.
+
 This exercise is about using and modifying an existing class. The solution contains a new class FruitBox, in the file FruitBox.cs.
 
 1.Have a look inside the file FruitBox.cs, and see what theFruitBox class definition contains. See if you can identify the instance fields, the constructor, the methods that returninformation (accessors), and the methods that change thevalue of an instance field (mutators)
